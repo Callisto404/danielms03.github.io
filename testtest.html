@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Scribbl.Yo</title>
+	<link rel="stylesheet" href="drawtest.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<header>
+		<img src="https://cdn2.iconfinder.com/data/icons/clean-minimal-set/16/open-menu-01-512.png" height="80px" width="80px">
+		<h1 id="logo">Scribbl.Yo</h1>
+	</header>
+	<div class="game">
+		<canvas id="canvas" width="1000" height="600" onmousedown="down(event)" onmousemove="move(event)" onmouseup="up(event)" onmouseleave="leave(event)"></canvas><br>
+		<div>
+			<button class="colours" id="black" onmousedown="selectColour(event)">Black</button>
+			<button class="colours" id="blue" onmousedown="selectColour(event)">Blue</button>
+			<button class="colours" id="red" onmousedown="selectColour(event)">Red</button>
+			<button class="colours" id="green" onmousedown="selectColour(event)">Green</button><br>
+		</div>
+		<div>
+			<button class="sizes" id="small" onclick="selectSize(event)">Small</button>
+			<button class="sizes" id="medium" onclick="selectSize(event)">Medium</button>
+			<button class="sizes" id="large" onclick="selectSize(event)">Large</button>
+		</div>
+	</div>
+</body>
+<script src="testtest.js"></script>
