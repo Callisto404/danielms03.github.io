@@ -1,7 +1,17 @@
-* { box-sizing: border-box; }
+* { 
+	box-sizing: border-box; 
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
 
 canvas {
 	border: 1px solid black;
+	margin-left: 5px;
 	background-color: white;
 	margin-top: 40px;
 }
@@ -13,11 +23,13 @@ body {
 
 .colours {
 	margin: 0 3px;
+	margin-left: 5px;
 }
 
 .sizes {
 	margin: 0 3px;
 	margin-top: 10px;
+	margin-left: 5px;
 }
 
 button {
@@ -26,6 +38,7 @@ button {
 	border-radius: 6px;
 	font-size: 22px;
 	box-shadow: 0 3px #999;
+	width: 80px;
 }
 
 .button:active {
@@ -35,26 +48,55 @@ button {
 
 button:focus {outline:0;}
 
-input {
-	margin-top: 5px;
-	margin-left: 5px;
+
+ul {
+	padding: 0;
+}
+
+ul {
+  background-color: #3c3744;
+  padding: 0;
+}
+
+a {
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > ul {
+  background-color: #1c77c3;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+
+nav > ul > li:hover > a > img {
+    filter: saturate(50);
+}
+
+nav > ul > li > ul > li:hover {
+  background-color: #a3d9ff;
+}
+
+nav > ul > li > ul > li {
+  display: none
+}
+
+
+nav > ul > li:hover > ul > li {
+  display: block;  
+}
+
+#menu {
+	padding: 6px;		
 }
 
 #logo {
-	color: rgb(196, 196, 196);
-	text-align: center;
-	padding-top: 15px;
-}
-
-header {
-	background-color: #3c3744;
-	height: 70px;
-	margin-top: -22px;
-	margin: -10px;
-	display: block;
-}
-
-img {
-	padding: 20px;
-	padding-top: 
+	margin: 0 auto;
 }
