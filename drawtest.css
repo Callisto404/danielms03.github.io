@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:700'); /* Nav */
 * { 
 	box-sizing: border-box; 
 	margin: 0;
@@ -49,7 +49,7 @@ button {
 
 button:focus {outline:0;}
 
-
+/* Nav */
 ul {
   background-color: #3c3744;
   padding: 0;
