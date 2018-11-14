@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:700');
+/* CSS Reset */
 * { 
 	box-sizing: border-box; 
 	margin: 0;
@@ -7,6 +9,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+
 }
 
 canvas {
@@ -14,13 +17,15 @@ canvas {
 	margin-left: 5px;
 	background-color: white;
 	margin-top: 40px;
+	cursor: url('eraser.png'), auto;
 }
 
 body {
 	background-color: #0059b2;
+	
 }
 
-
+/* Colours and size buttons */
 .colours {
 	margin: 0 3px;
 	margin-left: 5px;
@@ -38,7 +43,7 @@ button {
 	border-radius: 6px;
 	font-size: 22px;
 	box-shadow: 0 3px #999;
-	width: 80px;
+	width: 100px;
 }
 
 .button:active {
@@ -48,14 +53,11 @@ button {
 
 button:focus {outline:0;}
 
-
-ul {
-	padding: 0;
-}
-
+/* Navigation bar */
 ul {
   background-color: #3c3744;
   padding: 0;
+  text-align: center;
 }
 
 a {
@@ -74,6 +76,7 @@ nav > ul > li > ul {
   list-style: none;
   padding: 0;
   position: absolute;
+  
 }
 
 nav > ul > li:hover > a > img {
@@ -85,7 +88,7 @@ nav > ul > li > ul > li:hover {
 }
 
 nav > ul > li > ul > li {
-  display: none
+  display: none;
 }
 
 
@@ -93,10 +96,27 @@ nav > ul > li:hover > ul > li {
   display: block;  
 }
 
+nav > ul > li:hover > ul{
+  display: block;  
+	position: absolute;
+	right: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+	
 #menu {
-	padding: 6px;		
+	padding: 6px;
+	padding-top: 18px;
+	position: absolute;
+	right: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
 }
 
 #logo {
-	margin: 0 auto;
+	font-family: 'Encode Sans Semi Condensed', sans-serif;
+	font-size: 20px;
 }

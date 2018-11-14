@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Scribbl.Yo</title>
+	<link rel="stylesheet" href="drawtest.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<!--<script>
+		document.body.style.cursor = "wait";
+	</script>-->
+	<nav id="navbar">
+      <ul>
+        <li><a href="#"><img src="menu.png" width="42" id="menu"></a>
+          <ul>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">My profile</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" id="logo">Scribbl.Yo</a>
+        </li>
+      </ul>
+    </nav>
+	<div class="game">	
+		<canvas id="canvas" width="1000" height="600" onmousedown="down(event)" onmousemove="move(event)" onmouseup="up(event)" onmouseleave="leave(event)"></canvas><br>
+		<div> <!-- Colour buttons -->
+			<button class="colours" id="black" onmousedown="selectColour(event)">Black</button>
+			<button class="colours" id="blue" onmousedown="selectColour(event)">Blue</button>
+			<button class="colours" id="red" onmousedown="selectColour(event)">Red</button>
+			<button class="colours" id="green" onmousedown="selectColour(event)">Green</button>
+			<button class="colours" id="white" onmousedown="selectColour(event)">Eraser</button><br>
+		</div>
+		<div> <!-- Size Buttons -->
+			<button class="sizes" id="small" onclick="selectSize(event)">Small</button>
+			<button class="sizes" id="medium" onclick="selectSize(event)">Medium</button>
+			<button class="sizes" id="large" onclick="selectSize(event)">Large</button>
+			<button class="sizes" id="omegalarge" onclick="selectSize(event)">Omega Large</button>
+		</div>
+	</div>
+</body>
+<script src="testtest.js"></script>
