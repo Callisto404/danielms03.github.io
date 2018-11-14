@@ -20,6 +20,7 @@ var blueValue = 0;
 var small = 3;
 var medium = 5;
 var large = 10;
+var omegalarge = 60;
 var size = medium;
 
 var clickSize = new Array();
@@ -58,6 +59,8 @@ function selectSize(event) {
 		size = medium //Selecting size for actual drawing
 	} else if (activeSizeButton == 'large') {
 		size = large; //Selecting size for actual drawing
+	} else if (activeSizeButton == 'omegalarge') {
+		size = omegalarge; //Selecting size for actual drawing
 	}
 }
 
